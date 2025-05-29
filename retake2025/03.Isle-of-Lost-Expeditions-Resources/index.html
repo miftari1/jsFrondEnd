@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Isle of Lost Expeditions</title>
+    <link rel="stylesheet" href="./style/css/style.css" />
+  </head>
+
+  <body>
+      <h1>Isle of Lost Expeditions</h1>
+    <main>
+      <section id="form-section">
+        <div id="form">
+          <h1>Add Expedition</h1>
+          <form action="#">
+            <label for="island">Island:</label>
+            <input type="text" id="island" name="island" />
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" />
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" />
+          </form>
+          <div id="btn-container">
+            <button id="add-expedition">Add Expedition</button>
+            <button id="edit-expedition" disabled>Edit Expedition</button>
+          </div>
+        </div>
+      </section>
+
+      <div id="wrapper">
+        <section id="expeditions">
+          <button id="load-expeditions">Load Expeditions</button>
+          <div id="expedition-list">
+            <div class="expedition-scroll">
+              <div class="content">
+                <p>Skull Cay</p>
+                <p>Pamir</p>
+                <p>1902-02-03</p>
+              </div>
+              <div class="buttons-container">
+                <button class="change-btn">Change</button>
+                <button class="delete-btn">Delete</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
